@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameer DNS - Download</title>
+    <style>
+        :root {
+            --primary-color: #4682b4; /* Steel blue */
+            --secondary-color: #5f9ea0; /* Cadet blue */
+            --dark-color: #2c3e50;
+            --light-color: rgba(240, 248, 255, 0.9); /* Semi-transparent Alice blue */
+            --gray-color: #5f6368;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-color);
+            line-height: 1.6;
+            text-align: center;
+            background-image: url('https://uploadkon.ir/uploads/80c019_2593afc3d107c0496207039fe35e692f47.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: var(--light-color);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .app-title {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 20px 0;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 30px 0;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .feature-box {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-title {
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--gray-color);
+            font-size: 0.9em;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .note-box {
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            
+            .feature-box {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            
+            .download-btn {
+                padding: 15px 30px;
+                font-size: 1.2em;
+            }
+            
+            .app-title {
+                font-size: 2em;
+            }
+            
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">Ameer DNS</h1>
+        
+        <a href="https://uploadkon.ir/uploads/e28219_25AmeerDNS.rar" class="download-btn" id="downloadBtn">Download File For PC</a>
+        
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-title">Add DNS Easily</div>
+                <p>Simple interface to add custom DNS servers with one click</p>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-title">High Speed</div>
+                <p>Optimized servers for fastest browsing experience</p>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-title">Easy DNS Change</div>
+                <p>Change system DNS settings quickly without technical knowledge</p>
+            </div>
+            
+            <div class="feature-box">
+                <div class="feature-title">Security</div>
+                <p>Enhanced security features to protect your online activities</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Ameer DNS. All rights reserved.</p>
+            <div class="note-box">
+                If you have installation problems, run as administrator
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            // Track download if needed
+            console.log('Download started');
+        });
+    </script>
+</body>
+</html>
